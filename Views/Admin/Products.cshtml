@@ -1,0 +1,71 @@
+﻿
+@{
+    ViewBag.Title = "Products";
+    Layout = "~/Layouts/AdminLayout.cshtml";
+}
+
+<div class="container-fluid bg-white rounded-4 h-100">
+    <div class="row h-100">
+        <div class="col-6 p-4 h-100 overflow-y-auto">
+            <div class="h2 mb-3">Onay Bekleyen Ürünler</div>
+            <table class="table table-dark table-hover rounded-3 overflow-hidden">
+                <thead>
+
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Ürün</th>
+                        <th scope="col">Mağaza Id</th>
+                        <th scope="col">Fiyat</th>
+                        <th scope="col">İşlem</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var product in ViewBag.OnaysizUrunler)
+                     {
+                        <tr>
+                            <th scope="row">@product.Id</th>
+                            <td>@product.Name</td>
+                            <td>@product.SellerID</td>
+                            <td>@product.Price</td>
+                            <td>
+                                <a href="/Admin/ProductApprove/@product.Id" class="btn btn-success me-2">Onayla</a>
+                                <a href="/Admin/DeleteProduct/@product.Id" class="btn btn-outline-danger">Reddet</a>
+                            </td>
+                        </tr>
+                     }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-6 p-4 h-100 overflow-y-auto">
+            <div class="h2 mb-3">Onaylı Ürünler</div>
+            <table class="table table-dark table-hover rounded-3 overflow-hidden">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Ürün</th>
+                        <th scope="col">Satıcı Id</th>
+                        <th scope="col">Fiyat</th>
+                        <th scope="col">İşlem</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var product in ViewBag.OnayliUrunler)
+                     {
+                        <tr>
+                            <th scope="row">@product.Id</th>
+                            <td>@product.Name</td>
+                            <td>@product.SellerID</td>
+                            <td>@product.Price</td>
+                            <td><a href="/Admin/DeleteProduct/@product.Id" class="btn btn-outline-danger">Sil</a></td>
+                            
+                        </tr>
+                     }
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+</div>

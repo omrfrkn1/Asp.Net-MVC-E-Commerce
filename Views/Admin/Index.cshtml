@@ -1,0 +1,142 @@
+﻿
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Layouts/AdminLayout.cshtml";
+}
+
+<div class="container-fluid bg-white rounded-4 h-100">
+    <div class="row p-4" style="height: 5%;">
+        <div class="h2 ps-3">Anasayfa</div>
+    </div>
+    <div class="row p-4 text-white" style="height: 95%;">
+
+        <div class="col-4 p-3">
+            <div class="bg-primary h-100 rounded-3 p-4 position-relative">
+                <div class="row h-25">
+                    <div class="col-12">
+                        <div class="display-6 fw-bold">Mağaza İstekleri</div>
+                    </div>
+                </div>
+                <div class="row h-75">
+                    <div class="col-12 d-flex">
+                        <div class="mt-auto display-1 fw-bold" style="line-height: 70%;">@ViewBag.MagazaIstekleri</div>
+                    </div>
+                </div>
+                <a href="" class="stretched-link"></a>
+            </div>
+        </div>
+
+        <div class="col-4 p-3">
+            <div class="bg-primary h-100 rounded-3 p-4 position-relative">
+                <div class="row h-25">
+                    <div class="col-12">
+                        <div class="display-6 fw-bold">Ürün İstekleri</div>
+                    </div>
+                </div>
+                <div class="row h-75">
+                    <div class="col-12 d-flex">
+                        <div class="mt-auto display-1 fw-bold" style="line-height: 70%;">@ViewBag.UrunIstekleri</div>
+                    </div>
+                </div>
+                <a href="" class="stretched-link"></a>
+            </div>
+        </div>
+
+        <div class="col-4 p-3">
+            <div class="bg-warning h-100 rounded-3 p-4 position-relative">
+                <div class="row h-25">
+                    <div class="col-12">
+                        <div class="display-6 fw-bold">Müşteri Sayısı</div>
+                    </div>
+                </div>
+                <div class="row h-75">
+                    <div class="col-12 d-flex">
+                        <div class="mt-auto display-1 fw-bold" style="line-height: 70%;">@ViewBag.MusteriSayisi</div>
+                    </div>
+                </div>
+                <a href="" class="stretched-link"></a>
+            </div>
+        </div>
+
+        <div class="col-4 p-3">
+            <div class="bg-success h-100 rounded-3 p-4 position-relative">
+                <div class="row h-25">
+                    <div class="col-12">
+                        <div class="display-6 fw-bold">Bugünün Kazancı</div>
+                    </div>
+                </div>
+                <div class="row h-75">
+                    <div class="col-12 d-flex">
+                        <div class="mt-auto display-1 fw-bold" style="line-height: 70%;">@ViewBag.gunluk TL</div>
+                    </div>
+                </div>
+                <a href="" class="stretched-link"></a>
+            </div>
+        </div>
+
+        <div class="col-4 p-3">
+            <div class="bg-info h-100 rounded-3 p-4 position-relative">
+                <div class="row h-25">
+                    <div class="col-12">
+                        <div class="display-6 fw-bold">Haftalık Kazanç</div>
+                    </div>
+                </div>
+                <div class="row h-75">
+                    <div class="col-12 d-flex">
+                        <div class="mt-auto display-1 fw-bold" style="line-height: 70%;">@ViewBag.haftalik TL</div>
+                    </div>
+                </div>
+                <a href="" class="stretched-link"></a>
+            </div>
+        </div>
+
+        <div class="col-4 p-3">
+            <div class="bg-danger h-100 rounded-3 p-4 position-relative">
+                <div class="row h-25">
+                    <div class="col-12">
+                        <div class="display-6 fw-bold">Aylık Kazanç</div>
+                    </div>
+                </div>
+                <div class="row h-75">
+                    <div class="col-12 d-flex">
+                        <div class="mt-auto display-1 fw-bold" style="line-height: 70%;">@ViewBag.aylik TL</div>
+                    </div>
+                </div>
+                <a href="" class="stretched-link"></a>
+            </div>
+        </div>
+
+        <div class="col-6 p-3">
+            <div class="bg-secondary h-100 rounded-3 p-4 position-relative">
+                <div class="row h-25">
+                    <div class="col-12">
+                        <div class="display-6 fw-bold">Yıllık Kazanç</div>
+                    </div>
+                </div>
+                <div class="row h-75">
+                    <div class="col-12 d-flex">
+                        <div class="mt-auto display-1 fw-bold" style="line-height: 70%;">@ViewBag.yillik TL</div>
+                    </div>
+                </div>
+                <a href="" class="stretched-link"></a>
+            </div>
+        </div>
+
+        <div class="col-6 p-3">
+            <div class="bg-dark h-100 rounded-3 p-4 position-relative">
+                <div class="row h-25">
+                    <div class="col-12">
+                        <div class="display-6 fw-bold">Toplam Kazanç</div>
+                    </div>
+                </div>
+                <div class="row h-75">
+                    <div class="col-12 d-flex">
+                        <div class="mt-auto display-1 fw-bold" style="line-height: 70%;">@ViewBag.toplam TL</div>
+                    </div>
+                </div>
+                <a href="" class="stretched-link"></a>
+            </div>
+        </div>
+    </div>
+</div>
